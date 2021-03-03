@@ -1,13 +1,14 @@
 import React from "react";
+import s from './Navbar.module.css';
 
 function Navbar() {
     return (
-        <nav>
-            <a href={"#"}>Profile</a>
-            <a href={"#"}>Messages</a>
-            <a href={"#"}>News</a>
-            <a href={"#"}>Music</a>
-            <a href={"#"}>Settings</a>
+        <nav className={s.nav}>
+            <a href={"#"} className=`${s.nav__item} ${s.nav__item_active}`>Profile</a>
+            <a href={"#"} className={s.nav__item}>Messages</a>
+            <a href={"#"} className={s.nav__item}>News</a>
+            <a href={"#"} className={s.nav__item}>Music</a>
+            <a href={"#"} className={s.nav__item}>Settings</a>
         </nav>
     );
 }

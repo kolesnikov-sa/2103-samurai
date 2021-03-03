@@ -9,32 +9,3 @@
             "header header"
             "nav content";
 }
-
-header {
-    grid-area: header;
-    background-color: azure;
-}
-
-header img {
-    width: 50px;
-    height: auto;
-}
-
-nav {
-    grid-area: nav;
-    background-color: beige;
-}
-
-nav a {
-    display: block;
-}
-
-.content {
-    grid-area: content;
-    background-color: blanchedalmond;
-}
-
-.content img {
-    max-width: 100%;
-    height: auto;
-}
