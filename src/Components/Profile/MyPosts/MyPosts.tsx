@@ -11,11 +11,8 @@ function MyPosts() {
                 <button>Add post</button>
             </div>
             <div className={s.posts__content}>
-                <Post/>
-                <Post/>
-                <Post/>
-                <Post/>
-                <Post/>
+                <Post message={"Hi, how are you?"}/>
+                <Post message={"Great to see you!"}/>
             </div>
         </div>
     );
