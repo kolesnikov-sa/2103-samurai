@@ -11,8 +11,8 @@ function MyPosts() {
                 <button>Add post</button>
             </div>
             <div className={s.posts__content}>
-                <Post message={"Hi, how are you?"}/>
-                <Post message={"Great to see you!"}/>
+                <Post message={"Hi, how are you?"} likesCount={"23"}/>
+                <Post message={"Great to see you!"} likesCount={"35"}/>
             </div>
         </div>
     );

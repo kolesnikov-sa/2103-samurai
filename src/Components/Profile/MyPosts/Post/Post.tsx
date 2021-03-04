@@ -6,7 +6,7 @@ function Post(props: any) {
         <div className={s.post}>
             <img className={s.post__avatar} src={"https://www.nicepng.com/png/detail/186-1866063_dicks-out-for-harambe-sample-avatar.png"} />
             <div className={s.post__content}>{props.message}</div>
-            <div className={s.post__like}>Like</div>
+            <div className={s.post__like}>Likes: {props.likesCount}</div>
         </div>
     );
 }
