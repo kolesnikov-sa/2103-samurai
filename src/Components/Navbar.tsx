@@ -4,7 +4,7 @@ import s from './Navbar.module.css';
 function Navbar() {
     return (
         <nav className={s.nav}>
-            <a href={"#"} className=`${s.nav__item} ${s.nav__item_active}`>Profile</a>
+            <a href={"#"} className={`${s.nav__item} ${s.nav__item_active}`}>Profile</a>
             <a href={"#"} className={s.nav__item}>Messages</a>
             <a href={"#"} className={s.nav__item}>News</a>
             <a href={"#"} className={s.nav__item}>Music</a>

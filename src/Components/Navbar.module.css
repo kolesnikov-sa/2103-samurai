@@ -1,6 +1,6 @@
 .nav {
     grid-area: nav;
-    background-color: beige;
+    background-color: burlywood;
 }
 
 .nav__item {
@@ -8,6 +8,6 @@
     color: white;
 }
 
-.nav__item.nav__item_active {
-    color: blueviolet;
+.nav__item_active {
+    color: gold;
 }
