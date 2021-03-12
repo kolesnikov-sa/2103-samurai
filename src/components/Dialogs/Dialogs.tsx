@@ -2,23 +2,46 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import s from './Dialogs.module.css';
 
+type DialogItemType = {
+  id: string,
+  name: string
+}
+
+function DialogItem(props: DialogItemType) {
+  let path = '/dialogs/' + props.id
+  return (
+    <div className={s.dialog__item}><NavLink to={path}>{props.name}</NavLink></div>
+  );
+}
+
+type MessageType = {
+  message: string;
+}
+
+function Message(props: MessageType) {
+  return (
+    <div className={s.dialog__message}>{props.message}</div>
+  );
+}
+
 function Dialogs() {
     return (
       <div className={s.dialog}>
         <div className={s.dialog__items}>
-          <div className={s.dialog__item + ' ' + s.dialog__item_active}><NavLink to={'/dialogs/1'}>Kolya</NavLink></div>
-          <div className={s.dialog__item}><NavLink to={'/dialogs/2'}>Petya</NavLink></div>
-          <div className={s.dialog__item}><NavLink to={'/dialogs/3'}>Masha</NavLink></div>
-          <div className={s.dialog__item}><NavLink to={'/dialogs/4'}>Varya</NavLink></div>
-          <div className={s.dialog__item}><NavLink to={'/dialogs/5'}>Irina</NavLink></div>
-          <div className={s.dialog__item}><NavLink to={'/dialogs/6'}>Tikhon</NavLink></div>
+          <DialogItem id={"1"} name={"Kolya"}/>
+          <DialogItem id={"2"} name={"Petya"}/>
+          <DialogItem id={"3"} name={"Masha"}/>
+          <DialogItem id={"4"} name={"Varya"}/>
+          <DialogItem id={"5"} name={"Irina"}/>
+          <DialogItem id={"6"} name={"Tikhon"}/>
         </div>
         <div className={s.dialog__messages}>
-          <div className={s.dialog__message}>Message 1</div>
-          <div className={s.dialog__message}>Message 2</div>
-          <div className={s.dialog__message}>Message 3</div>
-          <div className={s.dialog__message}>Message 4</div>
-          <div className={s.dialog__message}>Message 5</div>
+          <Message message={'Message 1'}/>
+          <Message message={'Message 2'}/>
+          <Message message={'Message 3'}/>
+          <Message message={'Message 4'}/>
+          <Message message={'Message 5'}/>
+          <Message message={'Message 6'}/>
         </div>
       </div>
     );

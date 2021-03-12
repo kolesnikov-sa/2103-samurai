@@ -1,3 +1,7 @@
+.post:not(:first-child) {
+    margin-top: 1rem;
+}
+
 .post__avatar {
     width: 50px;
     height: auto;
