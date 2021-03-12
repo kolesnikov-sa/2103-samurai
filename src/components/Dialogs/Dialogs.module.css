@@ -1,0 +1,16 @@
+.dialog {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.dialog__items {
+    padding: 1rem;
+}
+
+.dialog__item_active {
+    color: gold;
+}
+
+.dialog__messages {
+    padding: 1rem;
+}
